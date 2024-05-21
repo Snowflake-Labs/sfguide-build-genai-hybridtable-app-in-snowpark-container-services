@@ -29,7 +29,7 @@ https://github.com/Snowflake-Labs/sfguide-build-genai-hybridtable-app-in-snowpar
 
 ## Prerequisites
 
-* Snowflake Account with SPCS and Hybrid Tables enabled.
+* Snowflake Account with SPCS (+ the ability to create GPU compute pool) and Hybrid Tables enabled. [Check SPCS availability](https://docs.snowflake.com/developer-guide/snowpark-container-services/overview#).
 * Docker Desktop (https://docs.docker.com/desktop) 
 
 ## Setup Environment
