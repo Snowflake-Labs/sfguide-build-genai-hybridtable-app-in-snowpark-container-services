@@ -151,5 +151,6 @@ In a new browser window, copy-paste the `ingress_url` URL from **Step 4** above 
 
 ## Quick Demo
 
+https://github.com/Snowflake-Labs/sfguide-build-genai-hybridtable-app-in-snowpark-container-services/assets/1723932/b724d02d-97e0-4fa7-be16-22cf8bbc9363
 
 
