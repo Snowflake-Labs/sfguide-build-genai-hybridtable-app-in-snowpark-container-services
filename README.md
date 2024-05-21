@@ -23,6 +23,10 @@ Here is the outline of what's covered:
   * [Gen AI Inpainting](#gen-ai-inpainting)
   * [Tower Uptime](#tower-uptime)
 
+## Quick Demo
+
+https://github.com/Snowflake-Labs/sfguide-build-genai-hybridtable-app-in-snowpark-container-services/assets/1723932/b724d02d-97e0-4fa7-be16-22cf8bbc9363
+
 ## Prerequisites
 
 * Snowflake Account with SPCS and Hybrid Tables enabled.
