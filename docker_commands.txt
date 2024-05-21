@@ -1,0 +1,7 @@
+DOCKER_BUILDKIT=0  docker build --platform linux/amd64 -t genai-spcs .
+
+docker tag genai-spcs:latest sfsenorthamerica-build-spcs.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/genai-spcs:latest
+docker login sfsenorthamerica-build-spcs.registry.snowflakecomputing.com -u dash
+docker push sfsenorthamerica-build-spcs.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/genai-spcs:latest
+
+

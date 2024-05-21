@@ -1,0 +1,26 @@
+spec:
+  container:  
+  - name: genai-spcs
+    image: /dash_db/dash_schema/dash_repo/genai-spcs
+    volumeMounts: 
+    - name: llm-workspace
+      mountPath: /notebooks/llm-workspace
+    env:
+      SNOWFLAKE_MOUNTED_STAGE_PATH: /notebooks/llm-workspace
+    resources:                         
+        requests:
+          nvidia.com/gpu: 1
+        limits:
+          nvidia.com/gpu: 1
+  endpoint:
+  - name: streamlit
+    port: 8080
+    public: true
+  - name: jupyter
+    port: 4200
+    public: true
+  volume:
+  - name: llm-workspace
+    source: "@llm_workspace"
+    uid: 0
+    gid: 0

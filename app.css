@@ -1,0 +1,42 @@
+/* metric values */
+/*
+.main {
+  font-size: 40px;
+  margin: auto;
+  padding: 10px;
+}
+
+.main {
+  text-align: left;
+}
+
+h2 span {
+  margin-top: -50px;
+  color: #115675;
+  font-size: 60px;
+  text-align: center;
+}
+*/
+
+/* div[data-testid = "stButton"] {
+    padding-top: 50px;
+} */
+
+/*
+h3#generated-image {
+  padding-top: 80px;
+}
+
+h4#image-metadata {
+  padding-top: 80px;
+}
+
+h4#generated-image {
+  padding-top: 80px;
+} */
+
+/* Center the "Generated Image" text */
+#generated-image {
+  margin-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+diffusers
+transformers
+accelerate
+scipy
+safetensors
+jupyterlab
+streamlit
+snowflake-snowpark-python
+snowflake-ml-python
+pandas
+notebook
+folium
+streamlit_folium
+streamlit_drawable_canvas==0.8.0
+streamlit-extras
