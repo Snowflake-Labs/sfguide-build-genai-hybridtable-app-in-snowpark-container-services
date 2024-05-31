@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo contains instructions for building a Gen AI application running in Snowpark Container Sevices (SPCS) and it also demonstrates the use of Hybrid tables within the application.
+This repo contains instructions for building a Gen AI application running in Snowpark Container Sevices (SPCS) and it also demonstrates the use of Hybrid tables within the application. If you have any questions or feedback, reach out to [Dash](dash.desai@snowflake.com).
 
 Here is the outline of what's covered:
 
@@ -23,9 +23,13 @@ Here is the outline of what's covered:
   * [Gen AI Inpainting](#gen-ai-inpainting)
   * [Tower Uptime](#tower-uptime)
 
+## Quick Demo
+
+https://github.com/Snowflake-Labs/sfguide-build-genai-hybridtable-app-in-snowpark-container-services/assets/1723932/b724d02d-97e0-4fa7-be16-22cf8bbc9363
+
 ## Prerequisites
 
-* Snowflake Account with SPCS and Hybrid Tables enabled.
+* Snowflake Account with SPCS (+ the ability to create GPU compute pool) and Hybrid Tables enabled. [Check SPCS availability](https://docs.snowflake.com/developer-guide/snowpark-container-services/overview#).
 * Docker Desktop (https://docs.docker.com/desktop) 
 
 ## Setup Environment
@@ -151,5 +155,10 @@ In a new browser window, copy-paste the `ingress_url` URL from **Step 4** above 
 
 ## Quick Demo
 
+https://github.com/Snowflake-Labs/sfguide-build-genai-hybridtable-app-in-snowpark-container-services/assets/1723932/b724d02d-97e0-4fa7-be16-22cf8bbc9363
+
+## Questions or Feedback
+
+If you have any questions or feedback, reach out to [Dash](dash.desai@snowflake.com).
 
 
