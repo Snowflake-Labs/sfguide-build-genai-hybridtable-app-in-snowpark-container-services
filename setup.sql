@@ -12,7 +12,7 @@ use warehouse DASH_WH_S;
 create stage DASH_STAGE;
 create image repository DASH_REPO;
 
-create security integration SNOWSERVICES_INGRESS_OAUTH
+create security integration if not exists SNOWSERVICES_INGRESS_OAUTH
   type=oauth
   oauth_client=snowservices_ingress
   enabled=true;
@@ -20,7 +20,7 @@ create security integration SNOWSERVICES_INGRESS_OAUTH
 create compute pool DASH_GPU3
 min_nodes = 1
 max_nodes = 2
-instance_family = GPU_3
+instance_family = GPU_NV_S
 auto_suspend_secs = 7200;
 
 create stage llm_workspace encryption = (type = 'SNOWFLAKE_SSE');
