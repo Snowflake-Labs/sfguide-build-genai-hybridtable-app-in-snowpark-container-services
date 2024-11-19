@@ -66,7 +66,7 @@ def generate_image(base_image: Image.Image, inpainted_image: Any, prompt: str):
 
 def get_inpainting_model():
     return StableDiffusionInpaintPipeline.from_pretrained(
-        "runwayml/stable-diffusion-inpainting",
+        "stabilityai/stable-diffusion-2-inpainting",
         revision="fp16",
         torch_dtype=torch.float32,
     )

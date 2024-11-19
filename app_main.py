@@ -14,10 +14,8 @@ add_navigation()
 if "inpainted_image" not in st.session_state:
     st.session_state.inpainted_image = None
 
-
 def reset_image():
     st.session_state.inpainted_image = None
-
 
 @st.cache_data
 def get_images() -> pd.DataFrame:
@@ -34,7 +32,6 @@ def get_images() -> pd.DataFrame:
     )
     return images
 
-
 # Don't cache, to show how metadata can be updated in real time
 @st.experimental_fragment(run_every=15)
 def get_image_metadata(city_name: str) -> dict:
@@ -47,7 +44,6 @@ def get_image_metadata(city_name: str) -> dict:
         .to_dict()
     )
     return {k: v for k, v in metadata.items() if k not in ["IMAGE_BYTES", "FILE_NAME", "LAT", "LON"]}
-
 
 @st.cache_data
 def get_image(city_name: str) -> Image.Image:
@@ -107,4 +103,4 @@ with right:
             _, col, _ = st.columns([1, 11, 1])
             with col:
                 st.write("#### Generated Image")
-                st.image(st.session_state.inpainted_image, use_column_width=True)
+                st.image(st.session_state.inpainted_image, use_container_width=True)
